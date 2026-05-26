@@ -1,0 +1,65 @@
+# Ignore build outputs
+bin/
+obj/
+
+# Visual Studio files
+*.user
+*.suo
+*.vsp
+*.vspscc
+*.vssscc
+*.pidb
+*.svclog
+*.cache
+
+# Visual Studio Code workspace settings
+.vscode/
+
+# Rider
+.idea/
+
+# NuGet
+*.nupkg
+packages/
+.nuget/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# User-specific files
+*.userosscache
+*.suo
+*.userprefs
+
+# Temporary files
+*.log
+*.tmp
+*.temp
+*.resharper*
+_ReSharper*/
+*.DotSettings.user
+
+# Built project files
+*.dll
+*.exe
+*.pdb
+*.appx
+*.appxbundle
+
+# Publish output
+publish/
+
+# VS build database
+*.VC.db
+
+# Rider caches
+.idea/
+
+# JetBrains Rider
+*.DotSettings.user
+
+# Mac files
+.DS_Store
+
+# Windows thumbnail cache
+Thumbs.db
