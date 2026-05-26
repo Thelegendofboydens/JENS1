@@ -1,5 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
+﻿
 var katten = new List<Kat>
 {
     new Kat("Minoes", 3),
@@ -21,6 +20,11 @@ foreach (var kat in katten)
     kat.Miauw();
 }
 
+var kat = new Kat("Minoes", 3);
+Console.WriteLine($"Naam: {kat.Naam}, Leeftijd: {kat.Leeftijd}");
+kat.Miauw();
+kat.Eet();
+
 public class Kat
 {
     public string Naam { get; set; }
@@ -35,5 +39,10 @@ public class Kat
     public void Miauw()
     {
         Console.WriteLine($"{Naam} zegt: Miauw!");
+    }
+
+    public void Eet()
+    {
+        Console.WriteLine($"{Naam} eet lekker.");
     }
 }
