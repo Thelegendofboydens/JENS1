@@ -3,6 +3,7 @@
 var kat = new Kat("Minoes", 3);
 Console.WriteLine($"Naam: {kat.Naam}, Leeftijd: {kat.Leeftijd}");
 kat.Miauw();
+kat.Eet();
 
 public class Kat
 {
@@ -18,5 +19,10 @@ public class Kat
     public void Miauw()
     {
         Console.WriteLine("Miauw!");
+    }
+
+    public void Eet()
+    {
+        Console.WriteLine($"{Naam} eet lekker.");
     }
 }
