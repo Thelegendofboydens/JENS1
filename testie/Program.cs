@@ -1,4 +1,5 @@
-﻿
+﻿using System.Collections.Generic;
+
 var katten = new List<Kat>
 {
     new Kat("Minoes", 3),
@@ -9,21 +10,21 @@ var katten = new List<Kat>
 Console.WriteLine("Overzicht van katten:");
 for (int i = 0; i < katten.Count; i++)
 {
-    var kat = katten[i];
-    Console.WriteLine($"{i + 1}. Naam: {kat.Naam}, Leeftijd: {kat.Leeftijd}");
+    var huidigeKat = katten[i];
+    Console.WriteLine($"{i + 1}. Naam: {huidigeKat.Naam}, Leeftijd: {huidigeKat.Leeftijd}");
 }
 
 Console.WriteLine();
 Console.WriteLine("Alle katten laten miauwen:");
-foreach (var kat in katten)
+foreach (var cat in katten)
 {
-    kat.Miauw();
+    cat.Miauw();
 }
 
-var kat = new Kat("Minoes", 3);
-Console.WriteLine($"Naam: {kat.Naam}, Leeftijd: {kat.Leeftijd}");
-kat.Miauw();
-kat.Eet();
+var mijnKat = new Kat("Minoes", 3);
+Console.WriteLine($"Naam: {mijnKat.Naam}, Leeftijd: {mijnKat.Leeftijd}");
+mijnKat.Miauw();
+mijnKat.Eet();
 
 public class Kat
 {
